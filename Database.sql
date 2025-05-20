@@ -39,3 +39,7 @@ SELECT * FROM customers
 WHERE customer_id NOT IN (
     SELECT DISTINCT customer_id FROM orders
 );
+
+/*Query 2: Total revenue generated from orders*/
+SELECT SUM(quantity * price) AS total_revenue
+FROM order_items;
