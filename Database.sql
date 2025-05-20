@@ -19,3 +19,12 @@ CREATE TABLE orders (
     customer_id INT NOT NULL REFERENCES customers(customer_id) ON DELETE CASCADE,
     order_date DATE DEFAULT CURRENT_DATE
 );
+
+CREATE TABLE order_items (
+    order_item_id SERIAL PRIMARY KEY,
+    order_id INT NOT NULL REFERENCES orders(order_id) ON DELETE CASCADE,
+    product_id INT NOT NULL REFERENCES products(product_id),
+    quantity INT NOT NULL CHECK (quantity > 0),
+    price DECIMAL(10,2) NOT NULL CHECK (price >= 0)
+);
+
