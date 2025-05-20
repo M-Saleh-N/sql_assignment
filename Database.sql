@@ -43,3 +43,11 @@ WHERE customer_id NOT IN (
 /*Query 2: Total revenue generated from orders*/
 SELECT SUM(quantity * price) AS total_revenue
 FROM order_items;
+
+/*Query 3: Top 5 products with highest sales revenue*/
+SELECT p.name, SUM(oi.quantity * oi.price) AS revenue
+FROM products p
+JOIN order_items oi ON p.product_id = oi.product_id
+GROUP BY p.name
+ORDER BY revenue DESC
+LIMIT 5;
