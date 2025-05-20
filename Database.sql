@@ -51,3 +51,8 @@ JOIN order_items oi ON p.product_id = oi.product_id
 GROUP BY p.name
 ORDER BY revenue DESC
 LIMIT 5;
+
+/*Query 4: Update customer address by customer ID*/
+UPDATE customers
+SET address = 'New Address Example'
+WHERE customer_id = 1;
