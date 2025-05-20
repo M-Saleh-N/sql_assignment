@@ -51,6 +51,12 @@ VALUES ('Laptop', 120000), ('Mouse', 1500), ('Keyboard', 2500), ('HDMI', 500), (
 -- Sample order
 INSERT INTO orders (customer_id) VALUES (1);  -- Vansh's order
 
+-- Sample order items
+INSERT INTO order_items (order_id, product_id, quantity, price)
+VALUES (1, 1, 1, 120000),  -- 1 Laptop
+       (1, 2, 2, 1500);    -- 2 Mice
+
+
 
 
 /*Query 1: Customers who have not placed any orders*/
