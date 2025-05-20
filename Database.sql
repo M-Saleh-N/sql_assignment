@@ -42,7 +42,7 @@ VALUES ('Vansh Patel', 'pvansh@gmail.com', '123 naka St'),
        ('Esha Patel', 'esha@gmail.com', '789 naka St'),
        ('Saleh Patel', 'salouhi@gmail.com', '321 naka St'),
        ('Akshay Patel', 'akshay@gmail.com', '213 naka St'),
-       ('Natasha Patel', 'nat@gmail.com', '231 naka St'),
+       ('Natasha Patel', 'nat@gmail.com', '231 naka St');
 
 
 
