@@ -28,3 +28,9 @@ CREATE TABLE order_items (
     price DECIMAL(10,2) NOT NULL CHECK (price >= 0)
 );
 
+CREATE TABLE bank_accounts (
+    account_id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL REFERENCES customers(customer_id) ON DELETE CASCADE,
+    balance DECIMAL(12,2) NOT NULL CHECK (balance >= 0)
+);
+
