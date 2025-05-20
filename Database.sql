@@ -56,6 +56,12 @@ INSERT INTO order_items (order_id, product_id, quantity, price)
 VALUES (1, 1, 1, 120000),  -- 1 Laptop
        (1, 2, 2, 1500);    -- 2 Mice
 
+-- Sample bank accounts
+INSERT INTO bank_accounts (customer_id, balance)
+VALUES 
+  (1, 150000.00),
+  (2, 30000.00);
+
 
 
 
