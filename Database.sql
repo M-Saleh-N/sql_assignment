@@ -34,6 +34,18 @@ CREATE TABLE bank_accounts (
     balance DECIMAL(12,2) NOT NULL CHECK (balance >= 0)
 );
 
+
+-- Sample customers
+INSERT INTO customers (name, email, address)
+VALUES ('Vansh Patel', 'pvansh@gmail.com', '123 naka St'),
+       ('Ansh Patel', 'ansh@gmail.com', '456 naka Ave'),
+       ('Esha Patel', 'esha@gmail.com', '789 naka St'),
+       ('Saleh Patel', 'salouhi@gmail.com', '321 naka St'),
+       ('Akshay Patel', 'akshay@gmail.com', '213 naka St'),
+       ('Natasha Patel', 'nat@gmail.com', '231 naka St'),
+
+
+
 /*Query 1: Customers who have not placed any orders*/
 SELECT * FROM customers
 WHERE customer_id NOT IN (
