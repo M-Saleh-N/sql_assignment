@@ -56,3 +56,18 @@ LIMIT 5;
 UPDATE customers
 SET address = 'New Address Example'
 WHERE customer_id = 1;
+
+/*Query 5: Transaction to transfer funds*/
+BEGIN;
+
+-- Deduct from source
+UPDATE bank_accounts
+SET balance = balance - 100.00
+WHERE account_id = 1;
+
+-- Add to destination
+UPDATE bank_accounts
+SET balance = balance + 100.00
+WHERE account_id = 2;
+
+COMMIT;
