@@ -44,6 +44,10 @@ VALUES ('Vansh Patel', 'pvansh@gmail.com', '123 naka St'),
        ('Akshay Patel', 'akshay@gmail.com', '213 naka St'),
        ('Natasha Patel', 'nat@gmail.com', '231 naka St');
 
+-- Sample products
+INSERT INTO products (name, price)
+VALUES ('Laptop', 120000), ('Mouse', 1500), ('Keyboard', 2500), ('HDMI', 500), ('Monitor', 80000);
+
 
 
 /*Query 1: Customers who have not placed any orders*/
