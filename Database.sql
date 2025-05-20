@@ -34,3 +34,8 @@ CREATE TABLE bank_accounts (
     balance DECIMAL(12,2) NOT NULL CHECK (balance >= 0)
 );
 
+/*Query 1: Customers who have not placed any orders*/
+SELECT * FROM customers
+WHERE customer_id NOT IN (
+    SELECT DISTINCT customer_id FROM orders
+);
