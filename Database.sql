@@ -48,6 +48,9 @@ VALUES ('Vansh Patel', 'pvansh@gmail.com', '123 naka St'),
 INSERT INTO products (name, price)
 VALUES ('Laptop', 120000), ('Mouse', 1500), ('Keyboard', 2500), ('HDMI', 500), ('Monitor', 80000);
 
+-- Sample order
+INSERT INTO orders (customer_id) VALUES (1);  -- Vansh's order
+
 
 
 /*Query 1: Customers who have not placed any orders*/
